@@ -1,0 +1,32 @@
+package com.consumer;
+
+import java.util.ArrayList;
+import java.util.function.Consumer;
+
+public class TestConsumer {
+	
+	public static void populateData(ArrayList<Movie> arr)
+	{
+	arr.add(new Movie("Akshay","Ravina","Mohara"));
+	arr.add(new Movie("sharukhan","Kajol","DDLj"));
+	arr.add(new Movie("slaman","Anushka","Sultan"));	
+	}
+
+	public static void main(String[] args) {
+		ArrayList<Movie> movilist=new ArrayList<>();
+		populateData(movilist);
+		
+		Consumer<Movie> consumer= mov->
+		{
+			System.out.println("Movie Name:"+ mov.movieName);
+			System.out.println("Actor Name:"+ mov.actor);
+			System.out.println("Actoress Name:"+ mov.actoress);
+			System.out.println("***********");
+		};
+		
+		for(Movie m:movilist)
+		{
+			consumer.accept(m);
+		}
+	}
+}

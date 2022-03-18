@@ -1,0 +1,12 @@
+package snippet;
+
+public class Snippet {
+	Need to check no hard deletion from other users.
+	
+	need master table for country having name and code and country code id should be FK
+	
+	need to add status table: status id should be FK
+	
+	need to check not null, uniqness and indexec, auto increament for all tables
+}
+

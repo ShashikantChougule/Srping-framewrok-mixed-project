@@ -1,0 +1,11 @@
+package com.healthcare.userservice;
+
+import java.util.List;
+
+import com.healthcare.userentity.User;
+
+public interface UserService {
+	
+	
+
+}

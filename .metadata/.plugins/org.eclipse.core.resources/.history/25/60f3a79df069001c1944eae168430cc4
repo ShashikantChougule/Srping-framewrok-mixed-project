@@ -1,0 +1,29 @@
+package com.methodreference;
+
+class Customer
+{
+	private String name;
+
+	public Customer(String name) {
+		super();
+		this.name = name;
+	}
+	
+}
+@FunctionalInterface
+interface Interf{
+	public Customer get(String name);
+}
+public class TestConstructor {
+
+	public static void main(String[] args) {
+      Interf interf=str -> new Customer(str);
+      interf.get("Operation Done By Lambda Expression");
+      
+      
+      Interf f1=Customer::new;
+      f1.get("Using Constructor reference");
+      
+	}
+
+}

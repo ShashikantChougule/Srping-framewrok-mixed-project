@@ -1,0 +1,24 @@
+package com.assgnment4;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.assignment4.Fruit;
+import com.assignment4.News;
+
+public class FriutTest {
+
+	public static void main(String[] args) {
+		
+		Fruit apple =new Fruit("apple", 100, 200, "red");
+		Fruit banana=new Fruit("banana", 50, 40, "yellow");
+		Fruit dragon =new Fruit("dragon", 200, 400, "pink");
+		Fruit kiwi =new Fruit("kiwi", 120, 300, "green");
+		
+		//Display the fruit names of low calories fruits i.e. calories < 100 sorted in descending order of calories.
+	
+
+	}
+
+}

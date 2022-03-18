@@ -1,0 +1,5 @@
+package com.spring.healthcare.repository;
+
+public interface AdminRepository {
+
+}

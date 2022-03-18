@@ -1,0 +1,33 @@
+package com.onlinetutorialspoint.confg;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+
+import com.spring.beans.Author;
+import com.spring.beans.Book;
+
+@Configuration
+public class BookConfiguration {
+	Author author = null;
+	Book book = null;
+
+	@Bean
+	@Scope("prototype")
+	public Author author() {
+		author = new Author();
+		author.setAuthorName("Craig Walls");
+		author.setAuthorAddress("Denton");
+		return author;
+	}
+
+	@Bean
+	public Book book() {
+		book = new Book();
+		book.setBookId(101);
+		book.setBookName("Spring in Action");
+		book.setAuthor(this.author());
+		return book;
+	}
+
+}

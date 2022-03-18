@@ -1,0 +1,39 @@
+package com.streams;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class TestStreams {
+
+	public static void main(String[] args) {
+
+		ArrayList<Integer> arr=new ArrayList<>();
+		arr.add(50);
+		arr.add(30);
+		arr.add(80);
+		arr.add(10);
+		arr.add(45);
+		arr.add(13);
+		
+		List<Integer> list=new ArrayList<>();
+		for(Integer in:arr)
+		{
+			if(in%2==0)
+			{
+				list.add(in);
+			}
+		}
+		
+		System.out.println(list);
+		
+		
+		System.out.println("******Stream Way*****");
+		
+		List<Integer> list1=arr.stream().filter(i->i%2==0).collect(Collectors.toList());
+		System.out.println(list1);
+	}
+
+	
+
+}

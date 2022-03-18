@@ -1,0 +1,29 @@
+package com.assignment;
+
+public class PhonNumber {
+	
+	private int PhonNumber;
+
+	public int getPhonNumber() {
+		return PhonNumber;
+	}
+
+	public void setPhonNumber(int phonNumber) {
+		PhonNumber = phonNumber;
+	}
+
+	public PhonNumber(int phonNumber) {
+		super();
+		PhonNumber = phonNumber;
+	}
+
+	@Override
+	public String toString() {
+		return "PhonNumber [PhonNumber=" + PhonNumber + "]";
+	}
+	
+	
+
+	
+
+}

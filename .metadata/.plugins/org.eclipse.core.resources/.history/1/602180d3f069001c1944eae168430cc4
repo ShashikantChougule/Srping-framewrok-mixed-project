@@ -1,0 +1,36 @@
+package com.streams.ProcessingEx;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+import java.util.function.ToIntFunction;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class BookMain {
+
+	public static void main(String[] args) {
+		List<Book> booklist=new ArrayList<>();
+		
+		//Book(String bname, double bprice, long bpages, int nbook)
+		booklist.add(new Book("core Java", 800, 1500, 5));
+		booklist.add(new Book("Advance Java", 1000, 2000, 4));
+		booklist.add(new Book("Spring", 2000, 2500, 15));
+		
+		Long totalbooks=booklist.stream().collect(Collectors.counting());
+		System.out.println("Total Books: "+totalbooks);
+		
+		
+		// Count()
+		
+		Long BookCount=	booklist.stream().filter((Book b)->(b.bprice)>=1000).count();
+		System.out.println("count of books having price > 1000  :"+BookCount);
+		
+		//Sort
+		List<Book> CustomizedSort=booklist.stream().sorted((b1,b2)-> b1.compareTo(b2)).collect(Collectors.toList());
+		CustomizedSort.forEach(System.out::println);
+		
+		List<Book> defaultSort=booklist.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+		defaultSort.forEach(System.out::println);
+	}
+}

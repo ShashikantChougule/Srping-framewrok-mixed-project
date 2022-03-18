@@ -1,0 +1,37 @@
+package com.consumer;
+
+public class Movie {
+	String actor;
+	String actoress;
+	String movieName;
+	public Movie(String actor, String actoress, String movieName) {
+		super();
+		this.actor = actor;
+		this.actoress = actoress;
+		this.movieName = movieName;
+	}
+	public String getActor() {
+		return actor;
+	}
+	public void setActor(String actor) {
+		this.actor = actor;
+	}
+	public String getActoress() {
+		return actoress;
+	}
+	public void setActoress(String actoress) {
+		this.actoress = actoress;
+	}
+	public String getMovieName() {
+		return movieName;
+	}
+	public void setMovieName(String movieName) {
+		this.movieName = movieName;
+	}
+	@Override
+	public String toString() {
+		return "Movie [actor=" + actor + ", actoress=" + actoress + ", movieName=" + movieName + "]";
+	}
+	
+
+}

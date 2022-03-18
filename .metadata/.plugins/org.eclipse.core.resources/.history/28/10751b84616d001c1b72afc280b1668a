@@ -1,0 +1,20 @@
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.onlinetutorialspoint.confg.BookConfiguration;
+import com.spring.beans.Author;
+import com.spring.beans.Book;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(BookConfiguration.class);
+		Book book = ctx.getBean(Book.class);
+		Author author =  book.getAuthor();
+		System.out.println("Book Name: "+book.getBookName());
+		System.out.println("Author Name : "+author.getAuthorName());
+		System.out.println("Author Address "+author.getAuthorAddress());
+	}
+
+}

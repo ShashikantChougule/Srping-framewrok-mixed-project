@@ -1,0 +1,19 @@
+package com.assignment;
+
+public class PhonNumber {
+	
+	private int PhonNumber;
+
+	public int getPhonNumber() {
+		return PhonNumber;
+	}
+
+	public void setPhonNumber(int phonNumber) {
+		PhonNumber = phonNumber;
+	}
+	
+	
+
+	
+
+}

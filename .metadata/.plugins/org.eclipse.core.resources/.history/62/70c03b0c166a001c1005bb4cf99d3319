@@ -1,0 +1,38 @@
+package com.assignment;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class mainClass {
+	
+	public static void getCustomerdata() {
+
+
+
+
+	}
+
+	public static void main(String[] args) {
+		
+		
+		List<PhonNumber> pn1=new ArrayList<PhonNumber>();
+		pn1.add(new PhonNumber(12345525));
+	  
+		List<PhonNumber> pn2=new ArrayList<PhonNumber>();
+        pn2.add(new PhonNumber(56377278));
+        
+        List<PhonNumber> pn3=new ArrayList<PhonNumber>();
+        pn3.add(new PhonNumber(72625268));
+        
+        Customer cust=new Customer(101, "Shashi", pn1);
+        
+        
+        
+        
+		
+        
+		
+
+	}
+
+}

@@ -1,0 +1,57 @@
+package com.training;
+
+import java.util.Comparator;
+
+public class Employee1 implements Comparator<Employee1> {
+	
+	private int id;
+	private int age;
+	private int salary;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public int getSalary() {
+		return salary;
+	}
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+	
+	
+	public Employee1(int id, int age, int salary) {
+		super();
+		this.id = id;
+		this.age = age;
+		this.salary = salary;
+	}
+	
+	
+	@Override
+	public int compare(Employee1 o1, Employee1 o2) {
+		// TODO Auto-generated method stub
+		return o1.getAge() - o2.getAge();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+	}
+
+
+

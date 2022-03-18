@@ -1,0 +1,12 @@
+package com.training;
+
+import java.util.Comparator;
+
+public class EmployeeSort implements Comparator<Employee1>{
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

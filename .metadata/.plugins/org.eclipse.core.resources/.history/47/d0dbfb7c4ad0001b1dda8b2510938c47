@@ -1,0 +1,5 @@
+package com.spring.healthcare.adminservice;
+
+public class AdminServiceImpl {
+
+}

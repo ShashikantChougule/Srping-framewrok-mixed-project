@@ -1,0 +1,18 @@
+package com.flatmap;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class CustomerDatabase {
+	
+public static List<Customer> getAll()
+{
+	return Stream.of(
+			new Customer(1, "Bhawana", Arrays.asList("11111111","2222222")),
+			new Customer(1, "chand", Arrays.asList("444444","2454545")),
+			new Customer(1, "rupali", Arrays.asList("66665666","898999")),
+			new Customer(1, "Ruchita", Arrays.asList("7878888","55554"))
+			).collect(Collectors.toList());
+}
+}

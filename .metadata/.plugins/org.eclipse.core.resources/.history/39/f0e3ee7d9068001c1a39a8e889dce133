@@ -1,0 +1,22 @@
+package com.set;
+
+
+import java.util.Set;
+import java.util.TreeSet;
+
+
+
+public class EmployeeSort {
+	
+	Employee e1 = new Employee(101, 25, 25000);
+    Employee e2 = new Employee(102, 26, 26000);
+    
+    TreeSet<Employee> set=new TreeSet<Employee>();
+    
+    
+   
+	
+	
+	
+
+}

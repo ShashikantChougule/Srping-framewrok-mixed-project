@@ -1,0 +1,22 @@
+package com.function;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Function;
+
+public class EmployeeSortByName {
+
+	public static void main(String[] args) {
+		
+		 Function<Employee, String> funcEmpToString= (Employee e)-> {return e.getName();};
+		 
+		 List<Employee> employeeList= 
+			     Arrays.asList(new Employee(101, "Shashi", 27),
+			    		       new Employee(102, "Akash", 28));
+		 
+		 List<String> empNameList=convertEmpListToNamesList(employeeList, funcEmpToString);
+		    empNameList.forEach(System.out::println);
+	}
+
+}

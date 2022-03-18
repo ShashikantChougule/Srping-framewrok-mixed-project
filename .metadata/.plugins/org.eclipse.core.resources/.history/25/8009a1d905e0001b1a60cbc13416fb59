@@ -1,0 +1,39 @@
+package com.assgnment4;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import com.assignment4.Fruit;
+
+import static java.util.stream.Collectors.*;
+
+
+public class FriutTest {
+
+	public static void main(String[] args) {
+		
+		List<Fruit> fruits = new ArrayList<>();
+		fruits.add(new Fruit("Mango", 60, 50, "Orange"));
+		fruits.add(new Fruit("Apple", 80, 60, "Red"));
+		fruits.add(new Fruit("CustaredApple", 30, 40, "Green"));
+		fruits.add(new Fruit("PineApple", 60, 120, "Orange"));
+		fruits.add(new Fruit("Chili", 90, 180, "Red"));
+
+		//1. Display the fruit names of low calories fruits i.e. calories < 100 sorted in descending order of calories.
+		fruits.stream()
+		.sorted((e1,e2) -> e1.getCalories() < e2.getCalories() ? 1: -1)
+		.filter(e-> e.getCalories() < 100)
+		.forEach(e -> System.out.println(e));
+
+		//2. Display color wise list of fruit names.
+		Map<String , List<String>> colorWiseFruitName = fruits.stream()
+		.collect(groupingBy(Fruit::getColor,mapping(Fruit::getName, toList())));
+		System.out.println(colorWiseFruitName);
+
+		//3. Display only RED color fruits sorted as per their price in ascending order.
+		fruits.stream().sorted((e1,e2) -> e1.getPrice() > e2.getPrice() ? 1: -1)
+		.filter(e -> e.getColor().equalsIgnoreCase("RED"))
+		.forEach(e -> System.out.println(e));
+	}
+}

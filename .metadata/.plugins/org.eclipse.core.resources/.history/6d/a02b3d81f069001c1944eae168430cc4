@@ -1,0 +1,18 @@
+package com.flatmap;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Snippet {
+	
+	public static void main(String[] args) {
+		List<Customer> customer = CustomerDatabase.getAll();
+	
+		List<String> custname = customer.stream().map(cus -> cus.getName()).collect(Collectors.toList());
+		System.out.println(custname);
+	
+		List<String> phoneList = customer.stream().flatMap(cus -> cus.getPhonenumber().stream()).collect(Collectors.toList());
+		System.out.println(phoneList);
+	}	
+}
+

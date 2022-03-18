@@ -1,0 +1,20 @@
+package com.function;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Function;
+
+public class EmployeeSortByName {
+
+	public static void main(String[] args) {
+		
+		
+		List<Employee> l=new ArrayList<>();
+		l.add(new Employee(101, "shashi", 27));
+		l.add(new Employee(102, "Akash", 27));
+		
+		Function<Employee,String> f=(Employee)->e.getName();
+		
+	}
+
+}

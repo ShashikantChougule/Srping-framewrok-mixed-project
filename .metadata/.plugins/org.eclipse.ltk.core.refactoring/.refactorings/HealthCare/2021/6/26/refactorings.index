@@ -1,0 +1,18 @@
+1624333635361	Rename package 'com.spring.healthcare'
+1624335047774	Rename type 'HealthCareManagementSystemApplication'
+1624335915351	Rename package 'com.spring.healthcareadmin'
+1624335933759	Rename package 'com.spring.healthcare.adminservice'
+1624335961343	Rename package 'com.spring.healthcare.controller'
+1624335983172	Rename package 'com.spring.healthcare.entity'
+1624336002043	Rename package 'com.spring.healthcare.repository'
+1624368654164	Copy compilation unit
+1624368670704	Copy compilation unit
+1624368849962	Rename package 'com.healthcare.admincontroller'
+1624368867304	Rename package 'com.healthcare.adminservice'
+1624368883647	Rename package 'com.healthcare.adminrepository'
+1624368897858	Rename package 'com.healthcare.adminentity'
+1624376799166	Rename type 'HealthCareAdminApplication'
+1624377594913	Rename type 'AuthonticationHandler'
+1624377697923	Rename type 'AuthenticationHandler'
+1624421364058	Delete element
+1624422014093	Delete elements

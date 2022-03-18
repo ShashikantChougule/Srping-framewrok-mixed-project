@@ -1,0 +1,8 @@
+package com.spring.healthcare.repository;
+
+import org.springframework.stereotype.Repository;
+
+@Repository("adminRepository")
+public interface AdminRepository {
+
+}

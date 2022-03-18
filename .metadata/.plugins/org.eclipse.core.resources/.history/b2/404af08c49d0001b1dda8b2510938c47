@@ -1,0 +1,5 @@
+package com.spring.healthcare.entity;
+
+public @interface Email {
+
+}

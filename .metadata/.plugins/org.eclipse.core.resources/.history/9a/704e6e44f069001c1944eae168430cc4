@@ -1,0 +1,30 @@
+package com.BiPredicate;
+
+import java.util.function.IntFunction;
+import java.util.function.IntPredicate;
+import java.util.function.Predicate;
+
+public class PredicateEx {
+
+	public static void main(String[] args) {
+		
+		int x[]= {10,30,25,67,40,60,89,80,67,50};
+		
+		System.out.println("Printing Even Numbers");
+		
+		//Predicate<Integer> pp;
+		
+		IntPredicate p1= i ->i%2==0;
+		for(int x1:x)
+		{
+			if(p1.test(x1));
+			System.out.println(x1);
+		}
+
+		
+		IntFunction<Integer> fucn=s->s*s;
+		System.out.println(fucn.apply(80));
+		
+	}
+
+}

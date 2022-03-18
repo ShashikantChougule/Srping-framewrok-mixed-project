@@ -1,0 +1,20 @@
+package com.demo.withoutAutowire;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		//By Type
+//		ApplicationContext context= new ClassPathXmlApplicationContext("beans.xml");
+		
+		//By Name
+		ApplicationContext context= new ClassPathXmlApplicationContext("beansByName.xml");
+		Employee empObj= context.getBean("empObj",Employee.class);
+		System.out.println(empObj);
+
+		
+	}
+
+}

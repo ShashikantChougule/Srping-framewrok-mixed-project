@@ -1,0 +1,29 @@
+package com.admin;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Predicate;
+
+public class FindAdmin {
+	public static void showAdmin(Predicate<User> predicate,List<User> list) {
+		list.forEach(
+		user->{
+		if(predicate.test((User) user))
+		System.out.println(user.getName());
+		}
+		);
+		}
+
+		public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List<User>userList=new ArrayList<>();
+		userList.add(new User(101,"Shashi","User"));
+		userList.add(new User(101,"Akash","Admin"));
+		userList.add(new User(101,"Vijay","Admin"));
+
+		Predicate<User>predicate= user->user.getRole().equals("Admin");
+		showAdmin(predicate,userList);
+		}
+
+}

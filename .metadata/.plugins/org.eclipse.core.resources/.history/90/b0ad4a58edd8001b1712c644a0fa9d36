@@ -1,0 +1,9 @@
+package com.healthcare.adminmodel;
+
+public class LoginDemo {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

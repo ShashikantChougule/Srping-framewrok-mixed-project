@@ -1,0 +1,34 @@
+package com.functionex;
+
+import java.util.function.Function;
+
+public class TestFunction {
+	
+	public static void main(String[] args) {
+		
+		Function<String,Integer> f= str-> str.length();
+		System.out.println(f.apply("Bhawana"));
+		
+		
+		Function<Integer,Integer> f2= In-> In*In;
+		System.out.println(f2.apply(4));
+		
+		Function<Integer,Integer> f3= In-> In+In;
+		System.out.println(f2.apply(4));
+		
+		f.andThen(f2); // f will execute followed by f2
+		
+		f3.compose(f2); // f2 will execute followed by f3
+		
+		
+	}
+	
+	//Assignment
+	//Function<Employee,String> f4=(Employee e)->e.getName();
+	/*
+	 * method(List<Employee> emp, Function<Employee,String> fun) {
+	 * List<String> listemp=new ArrayList<String>
+	 * }
+	 */
+
+}

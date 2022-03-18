@@ -1,0 +1,40 @@
+package com.set;
+
+public class Employee {
+	
+	private int Id;
+	private int Age;
+	private double Salary;
+	public int getId() {
+		return Id;
+	}
+	public void setId(int id) {
+		Id = id;
+	}
+	public int getAge() {
+		return Age;
+	}
+	public void setAge(int age) {
+		Age = age;
+	}
+	public double getSalary() {
+		return Salary;
+	}
+	public void setSalary(double salary) {
+		Salary = salary;
+	}
+	public EmployeeSort(int id, int age, double salary) {
+		super();
+		Id = id;
+		Age = age;
+		Salary = salary;
+	}
+	@Override
+	public String toString() {
+		return "EmployeeSort [Id=" + Id + ", Age=" + Age + ", Salary=" + Salary + "]";
+	}
+	
+	
+	
+
+}

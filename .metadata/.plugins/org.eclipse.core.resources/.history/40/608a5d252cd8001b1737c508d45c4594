@@ -1,0 +1,15 @@
+package com.healthcare.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.healthcare.entity.Admin;
+
+
+public interface AdminService {
+	
+	
+
+	
+}

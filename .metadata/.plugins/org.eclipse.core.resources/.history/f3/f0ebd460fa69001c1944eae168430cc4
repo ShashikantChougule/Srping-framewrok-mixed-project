@@ -1,0 +1,18 @@
+package com.assignment;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class mainClass {
+
+	public static void main(String[] args) {
+		
+		
+		List<PhonNumber> pn=new ArrayList<PhonNumber>();
+		pn.add(123876, null);
+		pn.add
+		
+
+	}
+
+}

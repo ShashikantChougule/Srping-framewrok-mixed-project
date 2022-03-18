@@ -1,0 +1,17 @@
+package com.healthcare.userservice;
+
+import java.util.List;
+
+import com.healthcare.userentity.User;
+
+public interface UserService {
+	
+	public List<User> findByRole(String user);
+
+	public User findByEmail(String user);
+	
+	public List<User> findAll();
+
+	public void save(User User);
+
+}

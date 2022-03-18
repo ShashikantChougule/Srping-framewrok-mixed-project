@@ -1,0 +1,33 @@
+package com.spring.healthcare.adminservice;
+
+import java.util.List;
+
+import com.spring.healthcare.entity.Admin;
+
+public class AdminServiceImpl implements AdminService {
+
+	@Override
+	public List<Admin> findByRole(String user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Admin findByEmail(String user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Admin> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void save(Admin admin) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

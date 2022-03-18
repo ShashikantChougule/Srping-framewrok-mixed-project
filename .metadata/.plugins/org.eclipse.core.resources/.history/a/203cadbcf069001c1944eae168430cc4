@@ -1,0 +1,34 @@
+package com.streams.DTOEx;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class UserMain {
+
+	public static void main(String[] args) {
+		List<User> listuser=new ArrayList<>();
+		listuser.add(new User(1, "Bhawana", "bhawana"));
+		listuser.add(new User(1, "chand", "chand"));
+		listuser.add(new User(1, "rupali", "rupali"));
+		listuser.add(new User(1, "Ruchita", "Ruchita"));
+		
+		List<UserDTO> listDTO=new ArrayList<>();
+		
+		listuser.stream().map(new Function<User, UserDTO>() {
+
+			@Override
+			public UserDTO apply(User user) {
+				return new UserDTO(user.getId(), user.getName());
+			}
+		});
+		
+		// using Stream with map
+		List<UserDTO> dto=listuser.stream()
+				.map((User user) -> new UserDTO(user.getId(), user.getName()))
+				.collect(Collectors.toList());
+		System.out.println(dto);
+		
+	}
+}

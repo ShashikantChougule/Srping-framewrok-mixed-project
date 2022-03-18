@@ -1,0 +1,22 @@
+package com.training;
+
+import java.util.Collection;
+import java.util.function.Predicate;
+
+public class PredicateExample {
+
+	public static void main(String[] args) {
+		
+		Predicate<Integer> predicate=I->(I>10);
+		System.out.println(predicate.test(5));
+		
+		Predicate<String> predicate1=str->(str.length()>6);
+		System.out.println(predicate1.test("Shashi"));
+		
+		Predicate<Collection>predicate2=coll->(coll.isEmpty());
+		System.out.println(predicate2.test("Shashi"));
+		
+		
+	}
+
+}

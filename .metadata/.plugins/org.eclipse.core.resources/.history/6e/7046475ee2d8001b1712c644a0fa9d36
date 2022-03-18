@@ -1,0 +1,16 @@
+package com.healthcare.adminservice;
+
+import java.util.List;
+
+import com.healthcare.adminmodel.Admin;
+
+public interface AdminService {
+	
+	
+	public void saveAdmin(Admin admin);
+	
+	public List<Admin> getAdmin();
+	
+	
+
+}

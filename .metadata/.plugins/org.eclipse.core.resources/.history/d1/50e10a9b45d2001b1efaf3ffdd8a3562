@@ -1,0 +1,27 @@
+package com.spring.healthcare.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.spring.healthcare.adminservice.AdminService;
+import com.spring.healthcare.adminservice.AdminServiceImpl;
+
+
+
+@Controller
+@RequestMapping("/admin")
+public class AdminController {
+	
+	@Autowired
+	 AdminService adminService;
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

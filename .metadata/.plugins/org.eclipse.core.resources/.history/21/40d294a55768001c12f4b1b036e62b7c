@@ -1,0 +1,10 @@
+package com.training;
+
+public class ColorExample {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.healthcare.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.healthcare.entity.Admin;
+
+
+public interface AdminService {
+	
+	
+	
+	public void saveAdmin(Admin admin);
+	
+	
+
+}

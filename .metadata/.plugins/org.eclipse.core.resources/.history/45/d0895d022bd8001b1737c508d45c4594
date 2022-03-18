@@ -1,0 +1,20 @@
+package com.healthcare.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.healthcare.entity.Admin;
+
+
+public interface AdminService {
+	
+	
+
+	public Admin findByEmail(String admin);
+
+	public void save(Admin admin);
+	
+	public void updateAdmin(int id,Admin admin);
+
+}

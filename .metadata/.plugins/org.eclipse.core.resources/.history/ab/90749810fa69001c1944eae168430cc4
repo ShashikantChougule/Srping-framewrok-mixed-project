@@ -1,0 +1,17 @@
+package com.assignment;
+
+public class PhonNumber {
+	
+	private int PhonNumber;
+
+	public int getPhonNumber() {
+		return PhonNumber;
+	}
+
+	public void setPhoneNumber(int phonNumber) {
+		this.PhonNumber = phonNumber;
+	}
+	
+	
+
+}

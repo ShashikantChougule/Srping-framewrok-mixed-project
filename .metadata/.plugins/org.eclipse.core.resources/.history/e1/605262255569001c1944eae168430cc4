@@ -1,0 +1,19 @@
+package com.streambasic;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamSort {
+
+	public static void main(String[] args) {
+		
+		
+		List<Employee> userList = new ArrayList<>(Arrays.asList(
+		        new Employee("Shashi", 25000)
+		        new Employee("Akash", 26000)
+		        
+	    
+	}
+
+}

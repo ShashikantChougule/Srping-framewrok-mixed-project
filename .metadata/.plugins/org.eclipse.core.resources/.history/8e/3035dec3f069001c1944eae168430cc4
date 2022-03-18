@@ -1,0 +1,54 @@
+package com.streams.Filter;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+
+public class ProductTest {
+
+	public static List<Product> getProducts() {
+		List<Product> listprod = new ArrayList<>();
+		listprod.add(new Product(1, "HP Laptop", 25000));
+		listprod.add(new Product(2, "samsung Laptop", 45000));
+		listprod.add(new Product(3, "Apple Laptop", 80000));
+		listprod.add(new Product(4, "lenova Laptop", 30000));
+		return listprod;
+	}
+
+	public static void main(String[] args) {
+
+		List<Product> list = new ArrayList<>();
+		for (Product prod : getProducts()) {
+			if (prod.getPrice() > 30000f) {
+				list.add(prod);
+			}
+		}
+		for (Product product : list) {
+			System.out.println(product);
+		}
+
+		// using Stream
+
+		System.out.println("***** USing Predicate defination in Stream *****");
+		getProducts().stream().filter(new Predicate<Product>() {
+
+			@Override
+			public boolean test(Product product) {
+				if (product.getPrice() > 30000) {
+					return true;
+				}
+				return false;
+			}
+		});
+
+		System.out.println("***** Greater then 30,000 *****");
+		List<Product> prodlist = getProducts().stream().filter((product) -> product.getPrice() > 30000f)
+				.collect(Collectors.toList());
+		prodlist.forEach(System.out::println);
+
+		System.out.println("***** Greater then 40,000 *****");
+		getProducts().stream().filter(( product) -> product.getPrice() > 40000f).forEach(System.out::println);
+
+	}
+}

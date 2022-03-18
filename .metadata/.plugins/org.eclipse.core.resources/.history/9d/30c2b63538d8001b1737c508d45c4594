@@ -1,0 +1,33 @@
+package com.healthcare.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.healthcare.entity.Admin;
+import com.healthcare.repository.AdminRepository;
+
+@Service
+public class AdminService {
+	
+	@Autowired
+	
+	AdminRepository adminRepository;
+	
+	
+	public void saveAdmin(Admin admin) {
+		adminRepository.save(admin);
+	}
+	
+	public Admin findAdminById(int id) {
+		return (Admin) adminRepository.findAll();
+		
+	}
+	
+	public void updateAdmin(int id,Admin admin) {
+		adminRepository.save(admin);
+	}
+	
+	public void deleteAdmin(int id) {
+		adminRepository.delete(admin);
+
+}

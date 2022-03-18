@@ -1,0 +1,38 @@
+package com.streams.Map;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class MapExample {
+
+	public static void main(String[] args) {
+     List<String> str=Arrays.asList("a","b","c","d");
+     
+     //Before Java 8
+     List<String> list=new ArrayList<>();
+     for(String s:str)
+     {
+    	 list.add(s.toUpperCase());
+     }
+     
+     
+   //Using Java 8 Map:
+ 	str.stream().map(new Function<String, String>() {
+
+		@Override
+		public String apply(String s) {
+			// TODO Auto-generated method stub
+			return s.toUpperCase();
+		}
+	});
+ 	
+ 	
+ 	List<String> list2=str.stream().map(s->s.toUpperCase()).collect(Collectors.toList());
+ 	
+ 	List<String> list3=str.stream().map(String::toUpperCase).collect(Collectors.toList());
+	}
+
+}

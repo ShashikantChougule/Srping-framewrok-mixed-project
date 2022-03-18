@@ -1,0 +1,29 @@
+package com.dateApi;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Month;
+import java.time.format.DateTimeFormatter;
+
+public class DateAndTimeExample {
+
+	public static void main(String[] args) {
+		LocalDate localdate=LocalDate.now();
+		System.out.println(localdate);
+		
+		LocalTime time=LocalTime.now();
+		System.out.println(time);
+		
+		LocalDateTime current=LocalDateTime.now();
+		
+		
+		
+		DateTimeFormatter formateTime=DateTimeFormatter.ofPattern("dd-MM-YYYY HH:MM:SS");
+		String formatedDate=current.format(formateTime);
+		
+		System.out.println(formatedDate);
+		Month month=current.getMonth();
+		int x=current.getDayOfMonth();
+	}
+}

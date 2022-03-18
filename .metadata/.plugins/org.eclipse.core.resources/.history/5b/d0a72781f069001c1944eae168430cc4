@@ -1,0 +1,40 @@
+package com.flatmap;
+
+import java.util.List;
+
+public class Customer {
+private int id;
+private String name;
+private List<String> phonenumber;
+
+public Customer(int id, String name, List<String> phonenumber) {
+	super();
+	this.id = id;
+	this.name = name;
+	this.phonenumber = phonenumber;
+}
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public List<String> getPhonenumber() {
+	return phonenumber;
+}
+public void setPhonenumber(List<String> phonenumber) {
+	this.phonenumber = phonenumber;
+}
+@Override
+public String toString() {
+	return "Customer [id=" + id + ", name=" + name + ", phonenumber=" + phonenumber + "]";
+}
+
+
+}

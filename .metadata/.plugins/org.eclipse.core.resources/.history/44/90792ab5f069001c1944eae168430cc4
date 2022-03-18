@@ -1,0 +1,39 @@
+package com.streams;
+
+
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class TestDouble{
+
+	public static void main(String[] args) {
+
+		ArrayList<Integer> arr=new ArrayList<>();
+		arr.add(50);
+		arr.add(30);
+		arr.add(80);
+		arr.add(10);
+		arr.add(45);
+		arr.add(13);
+		System.out.println("original list"+arr);
+		List<Integer> list=new ArrayList<>();
+		for(Integer in:arr)
+		{
+			list.add(in*2);
+			
+		}
+		
+		System.out.println(list);
+		
+		
+		System.out.println("******Stream Way*****");
+		
+		List<Integer> list1=arr.stream().map(i->i*2).collect(Collectors.toList());
+		System.out.println(list1);
+	}
+
+	
+
+}

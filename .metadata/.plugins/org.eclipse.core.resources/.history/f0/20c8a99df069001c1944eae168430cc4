@@ -1,0 +1,29 @@
+package com.methodreference;
+
+interface Printable
+{
+	public void print(int a);
+}
+
+public class TestMethodRefrence {
+	
+	public static int myStaticMethod(int a)
+	{
+		System.out.println("This is the method used for Method reference");
+		return a;
+	}
+	
+	public void myInstanceMethod()
+	{
+		
+	}
+
+	public static void main(String[] args) {
+
+		Printable p=TestMethodRefrence::myStaticMethod;
+		p.print(9);
+		
+		
+	}
+
+}

@@ -1,0 +1,61 @@
+package com.streams.ProcessingEx;
+
+public class Book implements Comparable<Book> {
+
+	String bname;
+	double bprice;
+	long bpages;
+	int nbook;
+
+	public Book(String bname, double bprice, long bpages, int nbook) {
+		super();
+		this.bname = bname;
+		this.bprice = bprice;
+		this.bpages = bpages;
+		this.nbook = nbook;
+	}
+
+	public String getBname() {
+		return bname;
+	}
+
+	public void setBname(String bname) {
+		this.bname = bname;
+	}
+
+	public double getBprice() {
+		return bprice;
+	}
+
+	public void setBprice(double bprice) {
+		this.bprice = bprice;
+	}
+
+	public long getBpages() {
+		return bpages;
+	}
+
+	public void setBpages(long bpages) {
+		this.bpages = bpages;
+	}
+
+	public int getNbook() {
+		return nbook;
+	}
+
+	public void setNbook(int nbook) {
+		this.nbook = nbook;
+	}
+
+	@Override
+	public String toString() {
+		return "Book [bname=" + bname + ", bprice=" + bprice + ", bpages=" + bpages + ", nbook=" + nbook + "]";
+	}
+
+	@Override
+	public int compareTo(Book book) {
+
+		return this.nbook > book.nbook ? 1 : this.nbook < book.nbook ? -1 : 0;
+	}
+
+}

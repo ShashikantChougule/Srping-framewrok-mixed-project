@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Training\Junit-Mockito\day-3\taxi-service-app\src\main\java\com\training\exception\InvalidCouponException.java"/>
+			<item value="C:\Users\ShashikantC4\Documents\workspace-spring-tool-suite-4-4.6.1.RELEASE\AppConfig"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.training"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Basic-Demo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="531"/>
+		<item key="x" value="443"/>
+		<item key="y" value="10"/>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\ShashikantC4\Documents\workspace-spring-tool-suite-4-4.6.1.RELEASE\SpringAssignment"/>
+			<item value="C:\Users\ShashikantC4\Downloads\SpringAssignment"/>
+			<item value="C:\Users\ShashikantC4\Documents\workspace-spring-tool-suite-4-4.6.1.RELEASE\1-SpringProjects"/>
+			<item value="C:\Training\Oauth2\auth-resource-server-app"/>
+			<item value="C:\Training\Oauth2\demo"/>
+			<item value="C:\Training\Docker\employee-jdbc"/>
+			<item value="C:\Training\spring boot microservices\movie-rating-service"/>
+			<item value="C:\Training\spring boot microservices\movie-details-service"/>
+			<item value="C:\Training\spring boot microservices\movie-catalog-service"/>
+			<item value="C:\Training\Spring Boot\employee-service-client"/>
+			<item value="C:\Training\Spring Boot\employee-service"/>
+			<item value="C:\Training\Hibernate\one-to-many-association-bidirectional"/>
+			<item value="C:\Training\Hibernate\one-to-many-association"/>
+			<item value="C:\Training\Hibernate\many-to-many-association"/>
+			<item value="C:\Training\Hibernate\inheritance-mapping-table-per-subclass"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

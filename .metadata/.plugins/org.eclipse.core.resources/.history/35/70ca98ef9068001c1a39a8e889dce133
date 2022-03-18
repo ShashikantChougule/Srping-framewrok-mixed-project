@@ -1,0 +1,61 @@
+package com.set;
+
+
+
+public class EmployeeSort {
+	
+	TreeSet<Employee> set = new TreeSet<Employee>(new myidComparator());
+
+	set.add(new Employee(20, 40, 30000));
+	set.add(new Employee(50, 10, 50000));
+	set.add(new Employee(10, 30, 10000));
+	set.add(new Employee(40, 50, 20000));
+	set.add(new Employee(30, 20, 40000));
+
+	System.out.println("increasing Order with the Id");
+
+	for (Employee ele : set) {
+	System.out.print(ele.getId() + " " + ele.getAge() + " " + ele.getSalary());
+	System.out.println();
+	}
+
+	TreeSet<Employee> set1 = new TreeSet<Employee>(new myageComparator());
+
+	set1.add(new Employee(20, 40, 30000));
+	set1.add(new Employee(50, 10, 50000));
+	set1.add(new Employee(10, 30, 10000));
+	set1.add(new Employee(40, 50, 20000));
+	set1.add(new Employee(30, 20, 40000));
+
+	System.out.println("increasing Order with the Age");
+
+	for (Employee ele : set1) {
+	System.out.print(ele.getId() + " " + ele.getAge() + " " + ele.getSalary());
+	System.out.println();
+	}
+
+	TreeSet<Employee> set2 = new TreeSet<Employee>(new mysalaryComparator());
+
+	set2.add(new Employee(20, 40, 30000));
+	set2.add(new Employee(50, 10, 50000));
+	set2.add(new Employee(10, 30, 10000));
+	set2.add(new Employee(40, 50, 20000));
+	set2.add(new Employee(30, 20, 40000));
+
+	System.out.println("increasing Order with the Age");
+
+	for (Employee ele : set2) {
+	System.out.print(ele.getId() + " " + ele.getAge() + " " + ele.getSalary());
+	System.out.println();
+	}
+
+
+	
+	
+    
+   
+	
+	
+	
+
+}

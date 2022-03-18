@@ -1,0 +1,17 @@
+package com.healthcare.adminservice;
+
+public class LoginServiceImpl implements LoginService {
+
+	@Override
+	public void loginByEmail(String Email) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void loginByPassword(String Password) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

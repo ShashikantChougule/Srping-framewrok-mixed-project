@@ -1,0 +1,22 @@
+package com.BiPredicate;
+
+import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
+import java.util.function.BiPredicate;
+
+public class BiFunctioInterfaceExample {
+
+	public static void main(String[] args) {
+
+		BiPredicate<Integer, Integer> bi =(a,b)->(a+b)%2==0;
+		System.out.println(bi.test(20, 20));
+		
+		BiFunction<String, String, String> bifun=(a,b)->a+b;
+		System.out.println(bifun.apply("Bhawana", "Bhan"));
+		
+		BiConsumer<String, String> bicon=(s1,s2) ->System.out.println(s1+s2);
+		bicon.accept("Pune", "Mah");
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.functionex;
+
+import java.util.function.Supplier;
+
+public class GenerateOTPUsingSupplier {
+
+	public static void main(String[] args) {
+
+		 Supplier<String> generateOTP=()->
+		 {
+			 String otp="";
+			 for(int i=1;i<=6;i++)
+			 {
+				 otp=otp+(int)( Math.random()*10);
+			 }
+			 return otp;
+		 };
+		 
+		 System.out.println(generateOTP.get());
+		 System.out.println(generateOTP.get());
+		 System.out.println(generateOTP.get());
+		 System.out.println(generateOTP.get());
+		 
+	}
+
+}

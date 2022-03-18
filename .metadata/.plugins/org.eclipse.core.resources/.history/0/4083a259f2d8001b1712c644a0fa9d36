@@ -1,0 +1,27 @@
+package com.healthcare.adminservice;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.healthcare.adminrepo.LoginRepo;
+@Service
+public class LoginServiceImpl implements LoginService {
+	
+	@Autowired
+	LoginRepo loginRepo;
+
+	@Override
+	public void loginByEmail(String Email) {
+		
+		loginRepo.fin
+		
+		
+	}
+
+	@Override
+	public void loginByPassword(String Password) {
+		
+		
+	}
+
+}

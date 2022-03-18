@@ -1,0 +1,43 @@
+package com.assgnment4;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
+import com.assignment4.Fruit;
+import com.assignment4.News;
+import com.training.model.Dish;
+
+public class FriutTest {
+
+	public static void main(String[] args) {
+		
+		List<Fruit> f=new ArrayList<>();
+		f.add(new Fruit("Apple", 200, 180, "red"));
+		f.add(new Fruit("Banana", 150, 50, "yellow"));
+		f.add(new Fruit("Dragon", 260, 400, "pink"));
+		f.add(new Fruit("kiwi", 150, 250, "green"));
+		f.add(new Fruit("pinapale",170, 300 "orrange"));
+		
+		
+		Fruit apple =new Fruit("apple", 100, 200, "red");
+		Fruit banana=new Fruit("banana", 50, 40, "yellow");
+		Fruit dragon =new Fruit("dragon", 200, 400, "pink");
+		Fruit kiwi =new Fruit("kiwi", 120, 300, "green");
+		
+		
+	
+
+	}
+	//Display the fruit names of low calories fruits i.e. calories < 100 sorted in descending order of calories.
+	public static void lowCaloryFriutsInDescendingOrder(List<Fruit> calories) {
+		Stream<Fruit> stream = calories.stream();
+		   
+		 stream.filter(friute -> fruite.getCalories() < 400)
+		            .sorted((dish1, dish2) -> Integer.compare(dish1.getCalories(), dish2.getCalories()))
+		            .map(dish -> dish.getName())
+		            .forEach(name -> System.out.println(name));    
+	}
+
+}

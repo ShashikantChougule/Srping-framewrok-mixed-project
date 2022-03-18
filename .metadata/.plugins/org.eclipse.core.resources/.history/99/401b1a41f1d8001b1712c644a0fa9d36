@@ -1,0 +1,7 @@
+package com.healthcare.adminservice;
+
+public interface LoginService {
+	
+	public void loginByEmail(String Email);
+
+}

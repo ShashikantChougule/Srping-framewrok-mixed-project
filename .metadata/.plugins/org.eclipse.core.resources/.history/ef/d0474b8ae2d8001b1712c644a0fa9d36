@@ -1,0 +1,46 @@
+package com.healthcare.adminservice;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.healthcare.adminmodel.Admin;
+import com.healthcare.adminrepo.AdminRepo;
+
+@Service
+public class AdminServiceImpl implements AdminService {
+	
+	@Autowired
+	AdminRepo adminRepo;
+
+	@Override
+	public void saveAdmin(Admin admin) {
+		adminRepo.save(admin);
+		
+	}
+
+	@Override
+	public List<Admin> getAdmin() {
+		
+		return adminRepo.findAll();
+	}
+
+	@Override
+	public void updateAdmin(Admin admin) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteAdmin(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+	
+	
+
+}
